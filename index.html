@@ -1,9 +1,26 @@
 <head>
     <script src="https://unpkg.com/@strudel/web@1.2.3"></script>
+
+        <style>
+        body{ 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100dvh;
+        }
+        button{
+            margin: 1rem 0;
+            width: 20vw;
+            height: 5vh;
+        }
+
+    </style>
 </head>
 
 
 <body>
+
     <h1>Strudel in HTML</h1>
     <button id="play">play</button>
     <button id="stop">stop</button>
@@ -22,3 +39,4 @@
         document.getElementById('stop').addEventListener('click', () => hush());
     </script>
 </body>
+
